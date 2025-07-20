@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id = "msg">Winner!!</p>
+        <button id="new-game-btn">New Game!!</button>
+    </div>
+    <div class="score-board">
+  <p>X Wins: <span id="x-score">0</span></p>
+  <p>O Wins: <span id="o-score">0</span></p>
+  <p>Draws: <span id="draw-score">0</span></p>
+  <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+</div>
+
+<div id="turn-indicator">O's Turn</div>
+    <main>
+        <h1>Tic-Tac-Toe</h1>
+        <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+    </main>
+    <script  src="app.js"></script>
+</body>
+</html>
